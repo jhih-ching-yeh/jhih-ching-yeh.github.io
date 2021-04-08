@@ -1,0 +1,256 @@
+//顏色
+$color_darker_tiffany: #3F7D7D
+$color_lighter_tiffany: #C2E6E5
+$color_word_tiffany: #406566
+$color_tiffany: #6DD0CD
+$color_yellow: #FFF2CC
+
+
+
+*
+  //border: solid 1px
+  font-family: 微軟正黑體
+  hr
+    border: solid 2px $color_darker_tiffany
+    margin-top: -2px
+    margin-bottom: -2px
+    
+
+  
+html,body
+  margin: 0
+  padding: 0
+
+h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6
+  font-weight: bold
+  
+nav.navbar.navbar-expand-lg.navbar-dark.fixed-top
+  background-color: $color_darker_tiffany
+  a.navbar-brand
+    font-family: 'Dancing Script'
+    color: $color_yellow
+    padding-left: 100px
+    
+  
+header.jumbotron
+  background-color: $color_lighter_tiffany
+  height: 330px
+  margin: 0 auto
+  color: white
+  .container 
+    margin: 0 auto
+    text-align: left
+  .banner
+    margin-top: -10px
+    margin-left: -200px
+    margin-right: -200px
+    height: 310px
+    display: flex
+    //justify-content: center
+    align-items: center
+    background-image: url(https://i.imgur.com/r8y8PXR.png)
+    background-size: cover
+    background-position: top center
+    color: #eee
+  .bannerContent
+    text-align: center
+    position: absolute
+    left: 380px
+    top: 118px
+    span 
+      font: 600 3em/1 "Oswald", sans-serif 
+      letter-spacing: 0 
+      padding: .25em 0 .325em 
+      display: block 
+      margin: 0 auto 
+      text-shadow: 0 0 80px rgba(255,255,255,.5) 
+    p  
+      text-transform: uppercase 
+      letter-spacing: .3em 
+      display: inline-block 
+      border: 4px double $color_tiffany 
+      border-width: 4px 0 
+      padding: 1em 0em 
+      position: absolute 
+      top: 18% 
+      left: 50% 
+      width: 35em 
+      margin: 0 0 0 -20em 
+
+      // Clip Background Image 
+
+      background: url(https://i.ibb.co/RDTnNrT/animated-text-fill.png) repeat-y
+      -webkit-background-clip: text
+      background-clip: text
+
+      // Animate Background Image 
+
+      -webkit-text-fill-color: transparent
+      -webkit-animation: aitf 80s linear infinite
+
+      //Activate hardware acceleration for smoother animations 
+
+      -webkit-transform: translate3d(0,0,0)
+      -webkit-backface-visibility: hidden
+
+/* Animate Background Image */
+@-webkit-keyframes aitf 
+  0%
+    background-position: 0% 50%
+  100%
+    background-position: 100% 50%
+
+        
+        
+        
+section
+  background-color: $color_lighter_tiffany
+  text-align: center
+  padding: 80px 0px
+  .section-heading 
+    color: white
+    font-size: 75%
+    text-align: center
+  .section-subheading
+    margin: 0 
+    font-size: 18px
+    color: $color_word_tiffany
+    
+.ml1
+  font-weight: 900
+  font-size: 3.5em
+  //background-color: yellow
+
+.ml1 .letters 
+  display: inline-block
+  line-height: 1em
+
+.ml1 .text-wrapper 
+  position: relative
+  display: inline-block
+  padding-top: 0.1em
+  padding-right: 0.05em
+  padding-bottom: 0.15em
+
+.ml1 .line1 
+  opacity: 0
+  position: absolute
+  top: 0
+  left: 0
+  height: 3px
+  width: 100%
+  background-color: $color_tiffany
+  transform-origin: 0 0
+
+.ml1 .line2
+  opacity: 0
+  position: absolute
+  left: 0
+  bottom: 0
+  height: 3px
+  width: 100%
+  background-color: $color_tiffany
+  transform-origin: 0 0
+
+
+
+        
+.card-body
+  h1
+    font-size: 23px
+    color: $color_darker_tiffany
+  h2
+    font-size: 20px
+    color: $color_darker_tiffany
+  ul.list-style-type.circle
+    font-size: 15px
+    text-align: left
+    color: #767171
+    
+.line_border
+  border-right: solid 2px #C8C6CA
+    
+section.final
+  padding-top: 50px
+  padding-bottom: 30px
+  background-color: black
+  color: white
+  h2
+    font-size: 25px
+  a
+    font-size: 15px
+    color: white
+    
+    
+.ml2
+  font-weight: 900
+  font-size: 3.5em
+  //background-color: yellow
+
+.ml2 .letters 
+  display: inline-block
+  line-height: 1em
+
+.ml2 .text-wrapper 
+  position: relative
+  display: inline-block
+  padding-top: 0.1em
+  padding-right: 0.05em
+  padding-bottom: 0.15em
+
+.ml2 .line1 
+  opacity: 0
+  position: absolute
+  top: 0
+  left: 0
+  height: 3px
+  width: 100%
+  background-color: $color_tiffany
+  transform-origin: 0 0
+
+.ml2 .line2
+  opacity: 0
+  position: absolute
+  left: 0
+  bottom: 0
+  height: 3px
+  width: 100%
+  background-color: $color_tiffany
+  transform-origin: 0 0
+  
+  
+.ml3
+  font-weight: 900
+  font-size: 3.5em
+  //background-color: yellow
+
+.ml3 .letters 
+  display: inline-block
+  line-height: 1em
+
+.ml3 .text-wrapper 
+  position: relative
+  display: inline-block
+  padding-top: 0.1em
+  padding-right: 0.05em
+  padding-bottom: 0.15em
+
+.ml3 .line1 
+  opacity: 0
+  position: absolute
+  top: 0
+  left: 0
+  height: 3px
+  width: 100%
+  background-color: $color_tiffany
+  transform-origin: 0 0
+
+.ml3 .line2
+  opacity: 0
+  position: absolute
+  left: 0
+  bottom: 0
+  height: 3px
+  width: 100%
+  background-color: $color_tiffany
+  transform-origin: 0 0
