@@ -27,6 +27,7 @@ nav.navbar.navbar-expand-lg.navbar-dark.fixed-top a.navbar-brand {
 }
 
 header.jumbotron {
+  overflow: hidden;
   background-color: #C2E6E5;
   height: 330px;
   margin: 0 auto;
