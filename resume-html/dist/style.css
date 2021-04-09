@@ -27,6 +27,7 @@ nav.navbar.navbar-expand-lg.navbar-dark.fixed-top a.navbar-brand {
 }
 
 header.jumbotron {
+  overflow: hidden;
   background-color: #C2E6E5;
   height: 350px;
   margin: 0 auto;
@@ -97,7 +98,7 @@ section {
   background-color: #C2E6E5;
   text-align: center;
   padding: 80px 0px;
-  margin-right: -120px;
+  margin-right: -150px;
 }
 section .section-heading {
   color: white;
