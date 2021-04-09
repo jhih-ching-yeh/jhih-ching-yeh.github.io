@@ -30,7 +30,8 @@ header.jumbotron {
   height: 330px;
   margin: 0 auto;
   color: white;
-  background-color: black;
+  background-image: url(https://i.imgur.com/LYYBVDl.png);
+  overflow: hidden;
 }
 header.jumbotron .container {
   margin: 0 auto;
