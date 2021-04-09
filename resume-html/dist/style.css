@@ -28,7 +28,7 @@ nav.navbar.navbar-expand-lg.navbar-dark.fixed-top a.navbar-brand {
 
 header.jumbotron {
   background-color: #C2E6E5;
-  height: 330px;
+  height: 350px;
   margin: 0 auto;
   color: white;
 }
@@ -38,8 +38,8 @@ header.jumbotron .container {
 }
 header.jumbotron .banner {
   margin-top: -10px;
-  margin-left: -200px;
-  margin-right: -400px;
+  margin-left: -300px;
+  margin-right: -300px;
   overflow: hidden;
   height: 310px;
   display: flex;
