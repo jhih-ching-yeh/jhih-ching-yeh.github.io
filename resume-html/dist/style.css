@@ -40,6 +40,7 @@ header.jumbotron .banner {
   margin-top: -10px;
   margin-left: -200px;
   margin-right: -200px;
+  overflow: hidden;
   height: 310px;
   display: flex;
   align-items: center;
