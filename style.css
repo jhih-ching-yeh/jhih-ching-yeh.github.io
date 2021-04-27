@@ -163,11 +163,11 @@ section.education .col-md-6:before {
 }
 section.education .pic1:before {
   background-image: url(https://i.imgur.com/ief0bOq.png);
-  background-size: auto 130%;
+  background-size: auto 150%;
 }
 section.education .pic2:before {
   background-image: url(https://i.imgur.com/Z1OMJaQ.png);
-  background-size: auto 110%;
+  background-size: auto 130%;
 }
 section.education p {
   opacity: 0.4;
