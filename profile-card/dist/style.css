@@ -1,0 +1,478 @@
+@import url("https://fonts.googleapis.com/css?family=DM+Sans:400,500|Jost:400,500,600&display=swap");
+* {
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+  color: #2b2c48;
+  font-family: "Jost", sans-serif;
+  background-image: url(https://i.imgur.com/Wjt8bWI.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  min-height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+.card {
+  max-width: 340px;
+  margin: auto;
+  overflow-y: auto;
+  position: relative;
+  z-index: 1;
+  overflow-x: hidden;
+  background-color: white;
+  display: flex;
+  transition: 0.3s;
+  flex-direction: column;
+  border-radius: 30px;
+  box-shadow: 0 0 0 8px rgba(255, 255, 255, 0.2);
+}
+
+.card[data-state="#about"] {
+  height: 450px;
+}
+.card[data-state="#about"] .card-main {
+  padding-top: 0;
+}
+
+.card[data-state="#contact"] {
+  height: 430px;
+}
+
+.card[data-state="#experience"] {
+  height: 550px;
+}
+
+.card.is-active .card-header {
+  height: 80px;
+}
+.card.is-active .card-cover {
+  height: 100px;
+  top: -50px;
+}
+.card.is-active .card-avatar {
+  transform: none;
+  left: 20px;
+  width: 50px;
+  height: 50px;
+  bottom: 10px;
+}
+.card.is-active .card-fullname,
+.card.is-active .card-jobtitle {
+  left: 86px;
+  transform: none;
+}
+.card.is-active .card-fullname {
+  bottom: 18px;
+  font-size: 19px;
+}
+.card.is-active .card-jobtitle {
+  bottom: 16px;
+  letter-spacing: 1px;
+  font-size: 10px;
+}
+
+.card-header {
+  position: relative;
+  display: flex;
+  height: 200px;
+  flex-shrink: 0;
+  width: 100%;
+  transition: 0.3s;
+}
+.card-header * {
+  transition: 0.3s;
+}
+
+.card-cover {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  height: 160px;
+  top: -20%;
+  left: 0;
+  will-change: top;
+  background-size: cover;
+  background-position: center;
+  filter: blur(30px);
+  transform: scale(1.2);
+  transition: 0.5s;
+}
+
+.card-avatar {
+  width: 100px;
+  height: 100px;
+  box-shadow: 0 8px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 50%;
+  -o-object-position: center;
+     object-position: center;
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%) translateY(-64px);
+}
+
+.card-fullname {
+  position: absolute;
+  bottom: 0;
+  font-size: 22px;
+  font-weight: 700;
+  text-align: center;
+  white-space: nowrap;
+  transform: translateY(-10px) translateX(-50%);
+  left: 50%;
+}
+
+.card-jobtitle {
+  position: absolute;
+  bottom: 0;
+  font-size: 11px;
+  white-space: nowrap;
+  font-weight: 500;
+  opacity: 0.7;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  margin: 0;
+  left: 50%;
+  transform: translateX(-50%) translateY(-7px);
+}
+
+.card-main {
+  position: relative;
+  flex: 1;
+  display: flex;
+  padding-top: 10px;
+  flex-direction: column;
+}
+
+.card-subtitle {
+  font-weight: 700;
+  font-size: 13px;
+  margin-bottom: 8px;
+}
+
+.card-content {
+  padding: 20px;
+}
+
+.card-desc {
+  line-height: 1.6;
+  color: #636b6f;
+  font-size: 12px;
+  margin: 0;
+  font-weight: 400;
+  font-family: "DM Sans", sans-serif;
+}
+.card-desc b {
+  font-weight: 1000;
+}
+
+.card-engineer {
+  line-height: 1.6;
+  color: #fff;
+  background-color: #191970;
+  font-size: 12px;
+  font-weight: 1000;
+  font-family: "DM Sans", sans-serif;
+  margin: 0;
+  border-radius: 5px;
+  padding: 0px 3px;
+  position: relative;
+  z-index: 0;
+  display: inline-block;
+}
+
+.card-social {
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  margin-bottom: 30px;
+}
+.card-social svg {
+  fill: #a5b5ce;
+  width: 16px;
+  display: block;
+  transition: 0.3s;
+}
+.card-social a {
+  color: #8797a1;
+  height: 32px;
+  width: 32px;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s;
+  background-color: rgba(93, 133, 193, 0.05);
+  border-radius: 50%;
+  margin-right: 10px;
+}
+.card-social a:hover svg {
+  fill: #637faa;
+}
+.card-social a:last-child {
+  margin-right: 0;
+}
+
+.card .base {
+  z-index: 90;
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  background-color: #fff;
+  width: 78px;
+  height: 78px;
+  transition: all 1s cubic-bezier(0.5, -0.75, 0.05, 1);
+  border-top-left-radius: 100%;
+  overflow: hidden;
+  box-shadow: -5px -5px 150px #21264b;
+}
+.card .base .menu {
+  z-index: 100;
+  background-color: #fff;
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  width: 85px;
+  height: 85px;
+  border-top-left-radius: 200px;
+  cursor: pointer;
+  transition: all 1s cubic-bezier(0.5, -0.75, 0.05, 1), background-color 1s ease;
+}
+.card .base .menu .icon {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  bottom: 50%;
+  right: 50%;
+  transform: translate(100%, 100%);
+}
+.card .base .menu .icon:before, .card .base .menu .icon:after {
+  content: "";
+  transform: rotate(0deg);
+  transition: bottom 0.5s ease 0.5s, transform 0.5s ease, background-color 0.75s ease 0.25s;
+}
+.card .base .menu .icon .bar, .card .base .menu .icon:before, .card .base .menu .icon:after {
+  position: absolute;
+  height: 5px;
+  right: 0px;
+  left: 0px;
+  border-radius: 10px;
+  background-color: #21264b;
+}
+.card .base .menu .icon .bar {
+  transition: opacity 0s linear 0.5s, background-color 0.75s ease 0.25s;
+  opacity: 1;
+  bottom: 10px;
+}
+.card .base .menu .icon:before {
+  bottom: 0px;
+}
+.card .base .menu .icon:after {
+  bottom: initial;
+  bottom: 20px;
+}
+.card .base .icons {
+  z-index: 98;
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+}
+.card .base .icons > * {
+  position: absolute;
+  font-size: 20px;
+  color: #21264b;
+  transition: 0.3s cubic-bezier(0.5, -0.25, 0.05, 1);
+}
+.card .base .icons .fa-user {
+  bottom: 17px;
+  right: 0px;
+  transition-delay: 0.2s;
+}
+.card .base .icons .fa-palette {
+  bottom: 0px;
+  right: 0px;
+  color: #fff;
+  transition-delay: 0.1s;
+}
+.card .base .icons .fa-envelope {
+  bottom: 0px;
+  right: 17px;
+}
+.card .base .section {
+  z-index: 96;
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  height: 0px;
+  width: 0px;
+  transform-origin: 0% 0%;
+  transform: rotate(135deg);
+}
+.card .base .section .cover1 {
+  transform-origin: 0% 0%;
+}
+.card .base .section .cover1,
+.card .base .section .cover1 .cover2,
+.card .base .section .cover1 .cover2 .content {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+}
+.card .base .section .cover1,
+.card .base .section .cover1 .cover2 {
+  bottom: 50%;
+  right: 50%;
+  transform: translate(100%, 100%) rotate(4deg);
+  overflow: hidden;
+  pointer-events: none;
+  transition: transform 0.5s ease-in;
+}
+.card .base .section .cover1 .cover2 {
+  transform: translate(-50%, 50%) rotate(-8deg);
+  transform-origin: 100% 0%;
+}
+.card .base .section .cover1 .cover2 .content {
+  width: 75px;
+  height: 75px;
+  border-radius: 100%;
+  background-color: #ee1b59;
+  bottom: 100%;
+  right: 0%;
+  transform: translate(50%, 50%);
+  transition: background-color 0s, width 1.5s cubic-bezier(0.5, -0.5, 0.05, 1) 0s, height 1.5s cubic-bezier(0.5, -0.5, 0.05, 1) 0s;
+  pointer-events: auto;
+}
+.card .base .section-static {
+  z-index: 94;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  transform-origin: 100% 100%;
+  transition: width 1s cubic-bezier(0.5, -0.75, 0.05, 1), height 1s cubic-bezier(0.5, -0.75, 0.05, 1);
+}
+.card .base .section-static:hover {
+  background-color: #eaeaea;
+}
+.card .base .section-static.bottom {
+  transform: rotate(45deg);
+  border-top-left-radius: 400px;
+}
+.card .base .section-static.top {
+  transform: rotate(-45deg);
+  border-top-left-radius: 400px;
+}
+.card .base.close {
+  width: 150px;
+  height: 150px;
+  transition: all 1.25s cubic-bezier(0.5, 0, 0.05, 1.75);
+}
+.card .base.close .menu {
+  width: 80px;
+  height: 80px;
+  transition: all 1s cubic-bezier(0.5, 0, 0.05, 1.75), background-color 1s ease;
+  background-color: #21264b;
+}
+.card .base.close .menu .icon .bar, .card .base.close .menu .icon:before, .card .base.close .menu .icon:after {
+  background-color: #ffffff;
+}
+.card .base.close .menu .icon .bar {
+  opacity: 0;
+}
+.card .base.close .menu .icon:before, .card .base.close .menu .icon:after {
+  transition: bottom 0.5s linear, transform 0.5s ease 0.5s, background-color 0.75s ease 0.25s;
+}
+.card .base.close .menu .icon:before {
+  bottom: 7px;
+  transform: rotate(-45deg);
+}
+.card .base.close .menu .icon:after {
+  bottom: 7px;
+  transform: rotate(45deg);
+}
+.card .base.close .icons {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+}
+.card .base.close .icons > * {
+  position: absolute;
+  font-size: 27px;
+  color: #21264b;
+  transition: 0.3s cubic-bezier(0.5, 0, 0.05, 1.75) 0.7s;
+  pointer-events: none;
+}
+.card .base.close .icons .fa-user {
+  bottom: 17px;
+  right: 100px;
+  font-size: 28px;
+}
+.card .base.close .icons .fa-palette {
+  bottom: 70px;
+  right: 70px;
+  color: #fff;
+  transition-delay: 0.65s;
+}
+.card .base.close .icons .fa-envelope {
+  bottom: 100px;
+  right: 17px;
+  transition-delay: 0.8s;
+}
+.card .base.close .section {
+  z-index: 96;
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  height: 0px;
+  width: 0px;
+  transform-origin: 0% 0%;
+  transform: rotate(135deg);
+}
+.card .base.close .section .cover1 {
+  transform-origin: 0% 0%;
+}
+.card .base.close .section .cover1,
+.card .base.close .section .cover1 .cover2,
+.card .base.close .section .cover1 .cover2 .content {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+}
+.card .base.close .section .cover1,
+.card .base.close .section .cover1 .cover2 {
+  bottom: 50%;
+  right: 50%;
+  background-color: pinkl;
+  transform: translate(100%, 100%) rotate(16deg);
+  overflow: hidden;
+  transition: transform 0.5s ease-in 0.5s;
+}
+.card .base.close .section .cover1 .cover2 {
+  transform: translate(-50%, 50%) rotate(-32deg);
+  transform-origin: 100% 0%;
+}
+.card .base.close .section .cover1 .cover2 .content {
+  border-radius: 100%;
+  background-color: #ee1b59;
+  bottom: 100%;
+  right: 0%;
+  transform: translate(50%, 50%);
+  transition: background-color 0s, width 1.1s cubic-bezier(0.5, 0, 0.05, 1.75) 0.25s, height 1.1s cubic-bezier(0.5, 0, 0.05, 2) 0.25s;
+}
+.card .base.close .section .cover1 .cover2 .content:hover {
+  background-color: #dd1350;
+}
+.card .base.close .section-static {
+  width: 150px;
+  height: 150px;
+  transition: width 1.25s cubic-bezier(0.5, 0, 0.05, 2), height 1.25s cubic-bezier(0.5, 0, 0.05, 2);
+}
