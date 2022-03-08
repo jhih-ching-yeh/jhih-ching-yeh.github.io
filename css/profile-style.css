@@ -92,7 +92,7 @@ p.kingston_pic {
   margin: auto auto;
   width: 30px;
   height: 30px;
-  background-image: url("/Users/jhihchingyeh/Desktop/web/WEB/img/EX_Kingston.png");
+  background-image: url("../img/EX_Kingston.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
@@ -103,7 +103,7 @@ p.GDSC_pic {
   margin: auto auto;
   width: 30px;
   height: 30px;
-  background-image: url("/Users/jhihchingyeh/Desktop/web/WEB/img/EX_GDSC.png");
+  background-image: url("../img/EX_GDSC.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
@@ -125,7 +125,7 @@ p.NCTU_pic {
   margin: auto auto;
   width: 30px;
   height: 30px;
-  background-image: url("/Users/jhihchingyeh/Desktop/web/WEB/img/EX_NCTU.png");
+  background-image: url("../img/EX_NCTU.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
@@ -136,7 +136,7 @@ p.influx_pic {
   margin: auto auto;
   width: 30px;
   height: 30px;
-  background-image: url("/Users/jhihchingyeh/Desktop/web/WEB/img/EX_inFlux.png");
+  background-image: url("../img/EX_inFlux.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
