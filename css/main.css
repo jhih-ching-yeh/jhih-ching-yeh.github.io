@@ -148,3 +148,14 @@ button.skill__btn {
 }
 
 
+@media (max-width: 800px) { 
+  .navbar-brand {
+    padding: 16px;
+    font-size: 24px;
+  }
+
+  .navbar-nav {
+    font-size: 24px;
+  }
+}
+
