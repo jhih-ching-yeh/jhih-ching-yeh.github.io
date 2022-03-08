@@ -1,0 +1,397 @@
+/*********************/
+/*      1.Banner      */
+/*********************/
+h5.icon-title {
+  padding: 150px 0px 0px 0px;
+	font-size: 16px;
+  font-weight: 800;
+  display:inline-block;
+}
+
+i.icon-title {
+  padding: 150px 0px 0px 32px;
+  font-size: 20px;
+  display:inline-block;
+}
+
+.title {
+  height: auto;
+  font-family: var(--topic-font);
+}
+
+.title h1 {
+  font: 400 45px 'Oswald', sans-serif;
+  font-family: var(--topic-font);
+  color: var(--main-color);
+  margin-bottom: 0px;
+  padding: 25px 50px 30px 32px;
+  text-shadow: var(--light-color) 0.1em 0.1em 0.2em;
+  letter-spacing: var(--spacing);
+  text-transform: uppercase;
+}
+
+.title h4 {
+  padding: 0px 50px 50px 32px;
+  font-size: 20px;
+}
+
+/*********************/
+/*     2.Project     */
+/*********************/
+div.card-container {
+  padding: 32px;
+}
+
+.card-container {
+	align-items: start;
+	display: grid;
+	grid-gap: 32px;
+  grid-template-columns: repeat(3, 1fr);
+	justify-content: center;
+}
+
+/* outer image */
+.outer {
+  border-radius: 5px;
+  display: flex;     
+  align-items: center;
+  text-align: center;
+  aspect-ratio: 1 / 1;
+}
+
+/* style-1 */
+div.style-1 {
+  position: relative;
+  background-image: url("/Users/jhihchingyeh/Desktop/web/WEB/img/PROJECT_cat.png");
+  background-size: cover;
+  display: flex;
+  border-radius: 5px;
+  aspect-ratio: 1/1;
+}
+div.style-1:after {
+  content: "";
+  position: absolute;
+  border-radius: 5px;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--thi-color);
+  -webkit-filter: brightness(.7);
+  opacity: 0.85;
+}
+div.style-1 > * {
+  z-index: 100;
+}
+/* style-1 hover */
+div.style-1:hover {
+  transform: scale(1.1);
+}
+div.style-1:hover:after  {
+  background-color: rgba(0, 0, 0 , 0.5);
+}
+div.style-1:hover button.MySkill__btn {
+  display: none;
+}
+div.style-1:hover h2.MyProject-name {
+  font-size: 36px;
+  color: var(--white-color);
+}
+
+/* style-2 */
+div.style-2 {
+  position: relative;
+  background-image: url("/Users/jhihchingyeh/Desktop/web/WEB/img/PROJECT_me-sea.png");
+  background-size: cover;
+  display: flex;
+  border-radius: 5px;
+  aspect-ratio: 1/1;
+}
+div.style-2:after {
+  content: "";
+  position: absolute;
+  border-radius: 5px;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--fif-color);
+  -webkit-filter: brightness(.7);
+  opacity: 0.85;
+}
+div.style-2 > * {
+  z-index: 100;
+}
+/* style-1 hover */
+div.style-2:hover {
+  transform: scale(1.1);
+}
+div.style-2:hover:after  {
+  background-color: rgba(0, 0, 0 , 0.5);
+}
+div.style-2:hover button.MySkill__btn {
+  display: none;
+}
+div.style-2:hover h2.MyProject-name {
+  font-size: 36px;
+  color: var(--white-color);
+}
+
+/* style-3 */
+div.style-3 {
+  position: relative;
+  background-image: url("/Users/jhihchingyeh/Desktop/web/WEB/img/PROJECT_cat2.jpg");
+  background-size: cover;
+  display: flex;
+  border-radius: 5px;
+  aspect-ratio: 1/1;
+}
+div.style-3:after {
+  content: "";
+  position: absolute;
+  border-radius: 5px;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var( --sec-color);
+  -webkit-filter: brightness(.7);
+  opacity: 0.85;
+}
+div.style-3 > * {
+  z-index: 100;
+}
+/* style-3 hover */
+div.style-3:hover {
+  transform: scale(1.1);
+}
+div.style-3:hover:after  {
+  background-color: rgba(0, 0, 0 , 0.5);
+}
+div.style-3:hover button.MySkill__btn {
+  display: none;
+}
+div.style-3:hover h2.MyProject-name {
+  font-size: 36px;
+  color: var(--white-color);
+}
+
+/* style-4 */
+div.style-4 {
+  position: relative;
+  background-image: url("/Users/jhihchingyeh/Desktop/web/WEB/img/PROJECT_me-sun.png");
+  background-size: cover;
+  display: flex;
+  border-radius: 5px;
+  aspect-ratio: 1/1;
+}
+div.style-4:after {
+  content: "";
+  position: absolute;
+  border-radius: 5px;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--four-color);
+  -webkit-filter: brightness(.7);
+  opacity: 0.85;
+}
+div.style-4 > * {
+  z-index: 100;
+}
+/* style-1 hover */
+div.style-4:hover {
+  transform: scale(1.1);
+}
+div.style-4:hover:after  {
+  background-color: rgba(0, 0, 0 , 0.5);
+}
+div.style-4:hover button.MySkill__btn {
+  display: none;
+}
+div.style-4:hover h2.MyProject-name {
+  font-size: 36px;
+  color: var(--white-color);
+}
+
+/* style-5 */
+div.style-5 {
+  position: relative;
+  background-image: url("/Users/jhihchingyeh/Desktop/web/WEB/img/PROJECT_dog.png");
+  background-size: cover;
+  display: flex;
+  border-radius: 5px;
+  aspect-ratio: 1/1;
+}
+div.style-5:after {
+  content: "";
+  position: absolute;
+  border-radius: 5px;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #ae85ca;
+  -webkit-filter: brightness(.7);
+  opacity: 0.85;
+}
+div.style-5 > * {
+  z-index: 100;
+}
+/* style-5 hover */
+div.style-5:hover {
+  transform: scale(1.1);
+}
+div.style-5:hover:after  {
+  background-color: rgba(0, 0, 0 , 0.5);
+}
+div.style-5:hover button.MySkill__btn {
+  display: none;
+}
+div.style-5:hover h2.MyProject-name {
+  font-size: 36px;
+  color: var(--white-color);
+}
+
+/* style-6 */
+div.style-6 {
+  position: relative;
+  background-image: url("/Users/jhihchingyeh/Desktop/web/WEB/img/PROJECT_me-school.png");
+  background-size: cover;
+  display: flex;
+  border-radius: 5px;
+  aspect-ratio: 1/1;
+}
+div.style-6:after {
+  content: "";
+  position: absolute;
+  border-radius: 5px;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #8499e7;
+  -webkit-filter: brightness(.7);
+  opacity: 0.85;
+}
+div.style-6 > * {
+  z-index: 100;
+}
+/* style-6 hover */
+div.style-6:hover {
+  transform: scale(1.1);
+}
+div.style-6:hover:after  {
+  background-color: rgba(0, 0, 0 , 0.5);
+}
+div.style-6:hover button.MySkill__btn {
+  display: none;
+}
+div.style-6:hover h2.MyProject-name {
+  font-size: 36px;
+  color: var(--white-color);
+}
+
+/* content */
+.card {
+  background-color: transparent;
+  border-color: transparent;
+}
+
+h2.MyProject-name {
+  font-size: 28px;
+  font-weight: 800;
+  color: var(--white-color)
+}
+
+button.MySkill__btn {
+	cursor: default;
+	font-size: 5px;
+	padding: 5px 5px;
+	border: 1.5px solid var(--white-color);
+	border-radius: 5px;
+	background-color: transparent;
+	color: var(--white-color);
+	margin: 5px 1px;
+}
+
+@media (max-width: 992px) {
+  .card-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 576px) {
+  .card-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+
+/*********************/
+/*       Footer       */
+/*********************/
+.footer-s{
+  background-color: var(--main-color);
+  margin-top: 150px;
+}
+
+.footer-s h5{
+  color: #fff;
+  font-size: var(--content-size);
+  padding: 20px 0;
+}
+
+/* Footer Left */
+.footer-s p{
+  font-size: var(--small-size);
+}
+
+/* Footer Center */
+.footer-center {
+  padding-left: 40px;
+}
+
+.center-first {
+  padding-top: 20px
+}
+
+.footer-center i{
+	background-color: var(--white-color);
+	color: var(--black-color);
+	font-size: var(--content-size);
+	width: 26px;
+	height: 26px;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 27px;
+	margin: 10px 15px;
+	vertical-align: middle;
+}
+
+.footer-center .fa-envelope{
+  font-size: 13px;
+}
+
+.footer-center p{
+	display: inline-block;
+	color: var(--white-color);
+	vertical-align: middle;
+	margin: 0;
+}
+
+.footer-center p a{
+	color: var(--white-color);
+}
+
+@media (max-width: 768px) {
+  .footer-center{
+    padding-left: 0px;
+  }
+}
+
+/* Footer Right */
+.list-unstyled a{
+  font-size: var(--small-size);
+}
