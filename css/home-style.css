@@ -153,7 +153,7 @@ body {
 }
 
 .card-subtitle {
-  font: 700 13px 'Oswald', sans-serif;
+  font: 900 13px 'Oswald', sans-serif;
   margin-bottom: 8px;
 }
 
@@ -169,7 +169,7 @@ body {
 }
 
 .card-desc b {
-  font-weight: 1000;
+  font-weight: 900;
 }
 
 .card-engineer {
