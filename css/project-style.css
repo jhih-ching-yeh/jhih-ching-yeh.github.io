@@ -62,7 +62,7 @@ div.card-container {
 /* style-1 */
 div.style-1 {
   position: relative;
-  background-image: url("/Users/jhihchingyeh/Desktop/web/WEB/img/PROJECT_cat.png");
+  background-image: url("../img/PROJECT_cat.png");
   background-size: cover;
   display: flex;
   border-radius: 5px;
@@ -101,7 +101,7 @@ div.style-1:hover h2.MyProject-name {
 /* style-2 */
 div.style-2 {
   position: relative;
-  background-image: url("/Users/jhihchingyeh/Desktop/web/WEB/img/PROJECT_me-sea.png");
+  background-image: url("../img/PROJECT_me-sea.png");
   background-size: cover;
   display: flex;
   border-radius: 5px;
@@ -140,7 +140,7 @@ div.style-2:hover h2.MyProject-name {
 /* style-3 */
 div.style-3 {
   position: relative;
-  background-image: url("/Users/jhihchingyeh/Desktop/web/WEB/img/PROJECT_cat2.jpg");
+  background-image: url("../img/PROJECT_cat2.jpg");
   background-size: cover;
   display: flex;
   border-radius: 5px;
@@ -179,7 +179,7 @@ div.style-3:hover h2.MyProject-name {
 /* style-4 */
 div.style-4 {
   position: relative;
-  background-image: url("/Users/jhihchingyeh/Desktop/web/WEB/img/PROJECT_me-sun.png");
+  background-image: url("../img/PROJECT_me-sun.png");
   background-size: cover;
   display: flex;
   border-radius: 5px;
@@ -218,7 +218,7 @@ div.style-4:hover h2.MyProject-name {
 /* style-5 */
 div.style-5 {
   position: relative;
-  background-image: url("/Users/jhihchingyeh/Desktop/web/WEB/img/PROJECT_dog.png");
+  background-image: url("../img/PROJECT_dog.png");
   background-size: cover;
   display: flex;
   border-radius: 5px;
@@ -257,7 +257,7 @@ div.style-5:hover h2.MyProject-name {
 /* style-6 */
 div.style-6 {
   position: relative;
-  background-image: url("/Users/jhihchingyeh/Desktop/web/WEB/img/PROJECT_me-school.png");
+  background-image: url("../img/PROJECT_me-school.png");
   background-size: cover;
   display: flex;
   border-radius: 5px;
