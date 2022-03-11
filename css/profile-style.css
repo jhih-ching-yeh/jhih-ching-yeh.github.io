@@ -14,8 +14,8 @@
     margin:0 auto;
   }
   .code-set {
-    font-size: var(--small-size);
-    line-height: 1;
+    font-size: 12px;
+    line-height: normal;
   }
 	
   #myExperience {
