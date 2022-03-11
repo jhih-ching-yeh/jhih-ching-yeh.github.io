@@ -1,0 +1,113 @@
+/*********************/
+/*      0.Setting     */
+/*********************/
+@media (min-width: 800px) {
+  #CtTitle {
+    width: 65%;
+    margin: 0 auto;
+  }
+
+  #Contact {
+    width: 65%;
+    margin: 0 auto;
+  }
+}
+
+
+/*********************/
+/*       1.Banner       */
+/*********************/
+h5.icon-title {
+  padding: 150px 0px 0px 0px;
+  font-size: 16px;
+  font-weight: 800;
+  display: inline-block;
+}
+
+i.icon-title {
+  padding: 150px 0px 0px 32px;
+  font-size: 20px;
+  display: inline-block;
+}
+
+.title {
+  height: auto;
+  font-family: var(--topic-font);
+}
+.title h1 {
+  font: 400 45px "Oswald", sans-serif;
+  font-family: var(--topic-font);
+  color: var(--main-color);
+  margin-bottom: 0px;
+  padding: 25px 32px 30px 32px;
+  text-shadow: var(--light-color) 0.1em 0.1em 0.2em;
+  letter-spacing: var(--spacing);
+  text-transform: uppercase;
+}
+.title h4 {
+  padding: 0px 32px 50px 32px;
+  font-size: 20px;
+}
+
+
+/*********************/
+/*       2.contact       */
+/*********************/
+.msg {
+  margin-top: 100px;
+}
+
+input:focus ~ label, input:valid ~ label {
+  font-size: 12px;
+  color: var(--main-color);
+  top: -5px;
+  -webkit-transition: all 0.225s ease;
+  transition: all 0.225s ease;
+}
+
+.styled-input {
+  padding: 0 32px;
+  width: 100%;
+  position: relative;
+}
+
+.styled-input label {
+  width: 100%;
+  color: var(--light-color);
+  padding: 1.3rem 32px 1rem 32px;
+  position: absolute;
+  top: 10px;
+  left: 0;
+  -webkit-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+  pointer-events: none;
+}
+
+input {
+  border: none;
+  border-bottom: 2px solid var(--light-color);
+  width: 100%;
+  font-size: 16px;
+  color: white;
+}
+
+input:focus {
+  outline: 0;
+  border-bottom: 2px solid var(--main-color);
+}
+
+input:focus ~ span {
+  width: 100%;
+  -webkit-transition: all 0.075s ease;
+  transition: all 0.075s ease;
+}
+
+input[type=text] {
+  color: var(--main-color);
+  padding: 3rem 0px 0px 0px;
+}
+
+input[type=email] {
+  color: var(--main-color);
+  padding: 3rem 0px 0px 0px;
+}
