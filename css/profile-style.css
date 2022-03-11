@@ -15,8 +15,8 @@
   }
 	
   .code-set {
-    font-size: 12px;
-    line-height: normal;
+    font-size: 5px;
+    line-height: 0.5;
   }
 	
   #myExperience {
@@ -401,7 +401,7 @@ li.exp_desc {
   .tabs > ul li a > span.tab-label {
     display: block;
     text-align: left;
-    font-size: 12px;
+    font-size: 10px;
     margin-left: -16px;
   }  
 }
