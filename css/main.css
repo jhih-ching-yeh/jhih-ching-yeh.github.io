@@ -40,6 +40,8 @@ body {
   body {
     font-size: 1.125rem;
   }
+  .sectiontitle h2 {
+    font: 400 32px 'Oswald', sans-serif;
 }
 
 a {
