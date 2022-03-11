@@ -141,13 +141,13 @@ button.skill__btn {
   background-color: var(--main-color);
 }
 .navbar-brand {
-  padding-left: 100px;
-  padding: 4px;
+  padding: 4px 0px 4px 100px;
 }
 .navbar-nav {
   padding-right: 50px;
 }
 .navbar-nav .nav-item:hover {
+  padding: 5px;
   background-color: rgba(165, 181, 206, 0.8);
 }
 
