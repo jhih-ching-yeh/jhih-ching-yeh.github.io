@@ -37,9 +37,9 @@ body {
 }
 
 @media (min-width: 768px) {
-	body {
-		font-size: 1.125rem;
-	}
+  body {
+    font-size: 1.125rem;
+  }
 }
 
 a {
