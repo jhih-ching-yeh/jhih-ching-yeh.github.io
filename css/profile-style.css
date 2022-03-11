@@ -397,19 +397,19 @@ li.exp_desc {
     display: none;
   }
   
-	.tabs > ul li a > span.tab-label {
-		display: block;
+  .tabs > ul li a > span.tab-label {
+    display: block;
     text-align: left;
-    font-size: 5px;
+    font-size: 12px;
     margin-left: -16px;
-	}  
+  }  
 }
 
 
 @media (min-width: 992px) {
-	.tabs {
-		width: auto;
-	}
+  .tabs {
+    width: auto;
+  }
 }
 
 
