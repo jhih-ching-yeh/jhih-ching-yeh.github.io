@@ -38,12 +38,9 @@ body {
   word-spacing: 3px;
 }
 
-@media (min-width: 768px) {
+@media (max-width: 800px) {
   body {
     font-size: 1.125rem;
-  }
-  .sectiontitle h2 {
-    font: 400 32px 'Oswald', sans-serif;
   }
 }
 
@@ -70,6 +67,12 @@ a {
   text-transform: uppercase;
 }
 
+@media (max-width: 800px) { 
+  .sectiontitle h2 {
+    font: 400 32px 'Oswald', sans-serif;
+  }
+}
+
 /* headerLine */
 .headerLine {
   width: 160px;
@@ -90,7 +93,7 @@ button.skill__btn {
   margin: 10px 5px;
 }
 
-@media (min-width: 800px) { 
+@media (max-width: 800px) { 
   button.skill__btn {
     font-size: 10px;
     padding: 2px 10px;
