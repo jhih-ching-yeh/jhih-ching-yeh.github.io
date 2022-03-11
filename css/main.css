@@ -139,6 +139,7 @@ button.skill__btn {
 }
 .navbar-brand {
   padding-left: 100px;
+  padding: 5px;
 }
 .navbar-nav {
   padding-right: 50px;
@@ -150,11 +151,12 @@ button.skill__btn {
 
 @media (max-width: 800px) { 
   .navbar-brand {
-    padding: 16px;
+    padding: 10px;
     font-size: 24px;
   }
 
   .navbar-nav {
+    padding: 10px;
     font-size: 24px;
   }
 }
