@@ -10,7 +10,7 @@
 body {
   overflow-x: hidden;
   color: #2b2c48;
-  font-family: "Jost", sans-serif;
+  font-family: sans-serif;
   background-image: url("../img/HomeBg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -74,11 +74,13 @@ body {
 .card.is-active .card-fullname {
   bottom: 18px;
   font-size: 19px;
+  font-family: "Jost", sans-serif;
 }
 .card.is-active .card-jobtitle {
   bottom: 16px;
   letter-spacing: 1px;
   font-size: 10px;
+  font-family: "Jost", sans-serif;
 }
 
 .card-header {
