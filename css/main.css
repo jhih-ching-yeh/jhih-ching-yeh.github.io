@@ -80,15 +80,23 @@ a {
 
 /* skill button */
 button.skill__btn {
-	cursor: default;
-	font-size: 5px;
-	padding: 5px 10px;
-	border: 1.5px solid gray;
-	border-radius: 50px;
-	background-color: gray;
-	color: var(--white-color);
-	margin: 10px 5px;
+  cursor: default;
+  font-size: 5px;
+  padding: 5px 10px;
+  border: 1.5px solid gray;
+  border-radius: 50px;
+  background-color: gray;
+  color: var(--white-color);
+  margin: 10px 5px;
 }
+
+@media (min-width: 800px) { 
+  button.skill__btn {
+    font-size: 10px;
+    padding: 2px 10px;
+  }
+}
+
 
 /* button href*/
 .button-href {
