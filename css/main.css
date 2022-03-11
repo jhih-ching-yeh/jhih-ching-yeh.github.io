@@ -1,6 +1,8 @@
 /*********************/
 /*       Main       */
 /*********************/
+@import url('https://fonts.googleapis.com/css2?family=Racing+Sans+One&display=swap');
+
 :root {
   /* -color- */
   --main-color: #21264b;  /* purple */
@@ -56,7 +58,7 @@ a {
   min-height: 20px;
   padding-bottom: 50px;
 }
-@import url('https://fonts.googleapis.com/css2?family=Racing+Sans+One&display=swap');
+
 
 .sectiontitle h2 {
   font: 400 45px 'Oswald', sans-serif;
@@ -65,7 +67,7 @@ a {
   margin-bottom: 0px;
   padding-top: 150px;
   text-shadow: var(--light-color) 0.1em 0.1em 0.2em;
-  letter-spacing: 3px;
+  letter-spacing: var(--spacing);
   text-transform: uppercase;
 }
 
