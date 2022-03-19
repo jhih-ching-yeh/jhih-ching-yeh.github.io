@@ -268,7 +268,7 @@ body {
 }
 .card .base .menu .icon .bar, .card .base .menu .icon:before, .card .base .menu .icon:after {
   position: absolute;
-  height: 5px;
+  height: 7px;
   right: 0px;
   left: 0px;
   border-radius: 10px;
